@@ -3,6 +3,8 @@ function mainController($scope) {
 
      $scope.myForm = {};
      $scope.onButtonClick = function() {
+          let tTab = [$scope.myForm.firstname, $scope.myForm.lastname, $scope.myForm.email];
+          console.log(tTab);
           document.querySelector('#tabs').innerHTML = `
                <table>
                     <tbody>
