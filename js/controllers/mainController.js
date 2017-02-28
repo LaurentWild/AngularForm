@@ -6,8 +6,6 @@ function mainController($scope) {
           let tTab = [$scope.myForm.firstname, $scope.myForm.lastname, $scope.myForm.email];
           console.log(tTab);
           document.querySelector('#tabs').innerHTML = `
-               <table>
-                    <tbody>
                          <tr>
                               <td>Prénom : ${$scope.myForm.firstname}</td>
                          </tr>
@@ -16,9 +14,7 @@ function mainController($scope) {
                          </tr>
                          <tr>
                               <td>Prénom : ${$scope.myForm.email}</td>
-                         </tr>
-                    </tbody>
-               </table>`;
+                         </tr>`;
 
      }
 }
