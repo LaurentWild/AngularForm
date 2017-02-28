@@ -5,7 +5,7 @@ function mainController($scope) {
      $scope.onButtonClick = function() {
           let tTab = [$scope.myForm.firstname, $scope.myForm.lastname, $scope.myForm.email];
           console.log(tTab);
-          document.querySelector('#tabs').innerHTML = `
+          document.querySelector('#tabs').innerHTML += `
                          <tr>
                               <td>Prénom : ${$scope.myForm.firstname}</td>
                          </tr>
